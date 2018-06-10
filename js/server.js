@@ -24,7 +24,7 @@ app.get('/', function(req, res) {
 
 app.post('/try', parse , function(req, res){
 
-	test(req);
+	nbMystere();
 
 	res.render('./myTemplate.hbs', {userPrint: userPrint , tries: tries, random: random , result: result});
 })
