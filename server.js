@@ -35,8 +35,8 @@ app.listen(8080);
 let tries = 3 // Nombre d'essais
 let result = ""; // phrase 
 let userPrint = ""; // user input
-let guess = document.getElementById('guess');
-console.log(guess);
+// let guess = document.getElementById('guess');
+// console.log(guess);
 
 // FUNCTION NOMBRE MYSTERE
  function nbMystere(){
