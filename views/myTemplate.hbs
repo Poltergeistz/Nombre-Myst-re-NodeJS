@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+  <title>Nombre Mystère : le retour</title>
+</head>
+
+<body>
+  <div id="title">
+    <h2>Nombre mystère :</h2>
+  </div>
+  <div id="tries-data">
+    
+  </div>
+  <form action="/try" method="post">
+    <input type="number" placeholder="devinez un nombre" id="guess">
+    <input type="button" value="entrer">
+  </form>
+  {{ result }}
+  <script type="text/javascript">
+     let triesData = "<h2>Tu as encore" {{tries}} "essais !</h2>";
+     let template = Handlebars.precompile(triesData);
+     let data = template({tries:tries});
+     document.getElementById('tries-data').innerHTML += data;
+     let generatedHTML = complied();</script>
+</body>
+
+</html>
